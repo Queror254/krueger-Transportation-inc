@@ -92,6 +92,11 @@ nav a:hover {
 /*
 * Hero Section
 */
+
+.fs-5 {
+    font-size: 1.2rem !important;
+}
+
 .hero {
     position: relative;
     height: 100vh;
