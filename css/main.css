@@ -40,10 +40,33 @@ body{
     font-size: 35px;
     font-weight: 600;
     padding: 20px;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 10px;
 
 }
+
+.section_spacer{
+    margin-top: 50px;
+}
+@media (max-width: 720px) {
+    .section_spacer{
+        margin-top: 80px;
+    }
+    
+}
+
+.logo{
+    width: 250px!important;
+    height: 70px!important;
+}
+
+@media (max-width: 720px) {
+.logo{
+    width: 150px !important;
+}
+}
+
+
 .logo_link{
     background-color: none;
 }
@@ -151,6 +174,7 @@ nav a:hover {
     color: white!important;
     background-color: #9b2626;
     transition: transform 1s ease;
+    margin-bottom: 5px;
 }
 
 .hero a:hover{
@@ -177,7 +201,7 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 165px;
+    padding-left: 150px;
     padding-right: 80px;
 }
 
@@ -207,7 +231,7 @@ nav a:hover {
 .services img{
     display: flex;
     justify-content: center;
-    width: 200px;
+    width: 250px;
 }
 
 img {
@@ -259,7 +283,7 @@ img {
 
 .contact_form button{
     padding: 10px;
-    width: 200px;
+    width: 124px;
     background-color: #181818;
 }
 
