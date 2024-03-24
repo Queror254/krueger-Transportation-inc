@@ -24,7 +24,9 @@
 <body>
         <nav class="navbar start-0 top-0 end-0 navbar-expand-lg navbar-light bg-trans">
             <div class="container-fluid">
+                <a class="logo_link" href="index.html">
                 <img class="navbar-brand ms-5" src="images/LOGO.PNG" alt="logo" width="150" height="70">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -33,17 +35,14 @@
                     <div class="nav_spacer"></div>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active me-4" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active me-4" aria-current="page" href="index.html" onclick="disableLink(event)">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active me-4" href="#services">Services</a>
+                            <a class="nav-link active me-4" href="#services" onclick="disableLink(event)">Services</a>
                         </li>
 
-                        <li>
-                            <a class="nav-link btn btn-outline-success me-4" href="#">Book Now</a>
-                        </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Contact</a>
+                            <a class="nav-link active" href="#contact" onclick="disableLink(event)">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -71,12 +70,13 @@
 
     </section>
 
-    <section class="services" id="services">
-            <div class="section_title">
-               Our Services
-            </div>
+    <section id="services">
+                    <div class="section_title">
+                        Our Services
+                    </div>
+        <div class="services">
        <div class="container-fluid">
-        <div class="row row-cols-1 row-cols-md-2 g-5 row_center">
+        <div class="row row-cols-1 row-cols-md-2 card_gap row_center">
             <div class="col col_width">
                 <div class="card">
                     <img src="images/service-1.png" class="card-img-top" alt="...">
@@ -144,7 +144,7 @@
                 </div>    
         </div>
         </div>
-
+    </div>
     </section>
 
  
@@ -323,9 +323,11 @@
                         <h6 class="text-uppercase fw-bold mb-4">
                             <img src="images/LOGO.PNG" alt="logo" width="150" height="70">
                         </h6>
-                        <p>
-                            Here you can use rows and columns to organize your footer content. Lorem ipsum
-                            dolor sit amet, consectetur adipisicing elit.
+                        <p class="d-flex align-items-start">
+                            Krueger Transportation Inc is a renowned transportation company specializing in reliable logistics solutions. With a
+                            commitment to safety and efficiency, we provide top-notch freight transportation, logistics management, and specialized
+                            transport services tailored to our clients' needs. Choose Krueger Transportation Inc for dependable, customer-focused
+                            transportation solutions.
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -376,14 +378,12 @@
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                        <p><i class="fas fa-home me-3"></i> location</p>
-                        <p>
-                            <i class="fas fa-envelope me-3"></i>
-                            info@KruegerTransportation.com
-                        </p>
-                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                        <p><i class="bi bi-house me-3"></i> location</p>
+                        <p><i class="bi bi-envelope me-3"></i>info@KruegerTransportation.com</p>
+                        <p><i class="bi bi-phone me-3"></i> + 01 234 567 88</p>
+                        <p><i class="bi bi-printer me-3"></i> + 01 234 567 89</p>
                     </div>
+
                     <!-- Grid column -->
                 </div>
                 <!-- Grid row -->

@@ -32,7 +32,28 @@ body{
     margin-bottom: 10px;
 
 }
+.logo_link{
+    background-color: none;
+}
 
+.logo_link:hover{
+    background-color: #ffffff;
+}
+
+nav a {
+     transition: color 2s ease ;
+     transition-delay: 2s ease;
+  }
+    
+nav a:hover {
+    color: white ;
+    background-color: #9b2626;
+    border-radius: 1rem;
+ }
+
+ footer a:hover{
+   color:#9b2626;
+ }
 /*
 * Hero Section
 */
@@ -121,7 +142,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 100px;
+    padding-left: 165px;
+    padding-right: 80px;
 }
 
 .col_width{
@@ -136,10 +158,15 @@ body{
     border-radius: 5px;
     min-width: 350px !important;
     max-width: 350px!important;
+    transition: transform 1s ease;
 }
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card_gap{
+    gap:1.5rem;
 }
 
 .services img{
@@ -165,7 +192,14 @@ img {
 
 /*** About Section ***/
 #about{
-    padding:20px;
+    padding-left:100px;
+    padding-right:100px;
+}
+
+@media (max-width: 720px) {
+    #about {
+            padding: 20px;
+        }
 }
 
 /*** contact section **/
@@ -174,6 +208,7 @@ img {
     padding-left:100px ;
     padding-right: 100px;
 }
+
 
 .contact_form form input,
 .contact_form form textarea {
