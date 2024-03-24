@@ -16,7 +16,7 @@ body{
 }
 
 .nav_spacer{
-    margin-right:500px;
+    margin-right:820px;
 }
 
 .nav-link{
@@ -195,7 +195,7 @@ nav a:hover {
 .services img{
     display: flex;
     justify-content: center;
-    width: 150px;
+    width: 200px;
 }
 
 img {
