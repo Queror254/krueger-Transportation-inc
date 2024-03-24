@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const element = document.querySelector(target);
         if (element) {
             const offset = element.offsetTop; // Get offset from top of the target element
-            const duration = 4000; // Adjust duration (in milliseconds) as needed for slower scrolling
+            const duration = 800; // Adjust duration (in milliseconds) as needed for slower scrolling
             const startY = window.pageYOffset; // Get current scroll position
             const distance = offset - startY; // Calculate distance to scroll
             const startTime = performance.now(); // Get current time
