@@ -4,6 +4,18 @@
     --bs-body-bg: #FBF0F6;
     --bs-body-font-family: 'Montserrat', sans-serif;
 }
+
+/* CSS for smooth scrolling animation */
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-200vh);
+    }
+}
+
 var
 body{
     background-color:var(--bs-body-bg);
