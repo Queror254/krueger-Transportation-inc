@@ -231,7 +231,7 @@ nav a:hover {
 .services img{
     display: flex;
     justify-content: center;
-    width: 250px;
+    width: 150px;
 }
 
 img {
@@ -255,17 +255,28 @@ img {
     padding-right:100px;
 }
 
+.img-fluid {
+    max-width: 120%;
+    height: 363px;
+}
+
 @media (max-width: 720px) {
     #about {
             padding: 20px;
+    }
+
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
         }
 }
 
 /*** contact section **/
 .contact_form{
     background: #ffffff;
-    padding-left:100px ;
-    padding-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
