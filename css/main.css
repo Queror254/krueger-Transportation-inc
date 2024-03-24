@@ -256,7 +256,7 @@ img {
 }
 
 .img-fluid {
-    max-width: 120%;
+    max-width: 107%;
     height: 363px;
 }
 
@@ -293,8 +293,8 @@ img {
 }
 
 .contact_form button{
-    padding: 10px;
-    width: 124px;
+    padding: 8px;
+    width: 130px;
     background-color: #181818;
 }
 
