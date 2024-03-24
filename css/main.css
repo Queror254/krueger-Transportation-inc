@@ -52,7 +52,7 @@ nav a:hover {
  }
 
  footer a:hover{
-   color:#9b2626;
+   color:#9b2626 !important;
  }
 /*
 * Hero Section
@@ -172,7 +172,7 @@ nav a:hover {
 .services img{
     display: flex;
     justify-content: center;
-    width: 90px;
+    width: 150px;
 }
 
 img {
@@ -270,3 +270,5 @@ img {
     padding: 10px;
 }
 }
+
+/** Footer section**/
