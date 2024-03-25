@@ -333,11 +333,16 @@ img {
 
 .map iframe{
     border-radius: 5px;
+    height: 500px;
 }
 
 @media (max-width: 720px) {
     .map_section{
         padding: 20px;
+    }
+
+    .map iframe{
+        height: 400px;
     }
 }
 
