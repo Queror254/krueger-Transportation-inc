@@ -177,7 +177,7 @@ nav a:hover {
 }
 
 .hero__content_animator {
-    margin-top: 70%;
+    margin-top: 90%;
     transform: translate(-50%, -50%);
     opacity: 0;
     animation: fadeInAndPopUp 2s ease forwards;
