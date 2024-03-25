@@ -1,7 +1,7 @@
 :root {
     --primary-color: #0a1118;
     --primary-color-highlight: #233D54;
-    --bs-body-bg: #FBF0F6;
+    --bs-body-bg: #e7ebef;
     --bs-body-font-family: 'Montserrat', sans-serif;
 }
 
@@ -16,9 +16,8 @@
     }
 }
 
-var
 body{
-    background-color:var(--bs-body-bg);
+    background-color:var(--bs-body-bg) !important;
 }
 
 .navbar{
@@ -93,10 +92,6 @@ nav a:hover {
 * Hero Section
 */
 
-.fs-5 {
-    font-size: 1.2rem !important;
-}
-
 .hero {
     position: relative;
     height: 100vh;
@@ -114,7 +109,7 @@ nav a:hover {
     }
 }
 
-.hero__video {
+.hero__image {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -148,9 +143,15 @@ nav a:hover {
     justify-content: center;
 }
 
-@media (max-width: 720px) {
-
+@media (max-width: 790px) {
+    .fs-5 {
+    font-size: 1.2rem !important;
+    }
+    .hero__image{
+        max-width: 180% !important;
+    }
 }
+
 
 .hero__scroll-btn {
     position: absolute;
@@ -223,10 +224,16 @@ nav a:hover {
     min-width: 350px !important;
     max-width: 350px!important;
     transition: transform 1s ease;
+    background-color: #f9fafb !important;
 }
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title{
+    font-size: 25px;
+    color: #9b2626 !important;;
 }
 
 .card_gap{
@@ -277,8 +284,12 @@ img {
 }
 
 /*** contact section **/
+.contact{
+    background-color: #e7ebef;
+}
+
 .contact_form{
-    background: #ffffff;
+    background: #e7ebef;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -329,7 +340,7 @@ img {
 
 
 .form-container-box {
-    background: #ffffff;
+    background: #e7ebef;
     padding: 40px;
 }
 
