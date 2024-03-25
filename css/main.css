@@ -32,7 +32,7 @@ body{
 }
 
 .nav_spacer{
-    margin-right:660px;
+    margin-right:620px;
 }
 
 .nav-link{
@@ -118,13 +118,27 @@ nav a:hover {
 .hero__image {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 100%;
     min-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateY(-50%);
+    animation: swipeIn 1.5s ease forwards;/* Animation to swipe the image in */
 }
+
+@keyframes swipeIn {
+    0% {
+        left: calc(100% - 50px);
+        /* Initially positioned outside the viewport */
+    }
+
+    100% {
+        left: 0;
+        /* Positioned at the center of the viewport */
+    }
+}
+
 
 .hero__overlay {
     position: absolute;
@@ -166,7 +180,7 @@ nav a:hover {
     margin-top: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    animation: fadeInAndPopUp 3s ease forwards;
+    animation: fadeInAndPopUp 2s ease forwards;
 }
 
 /* Apply fade-in animation to hero content */
