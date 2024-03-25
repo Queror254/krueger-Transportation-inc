@@ -41,3 +41,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.read-more').forEach(function(button) {
+        button.addEventListener('click', function(event) {
+            event.preventDefault();
+            const cardBody = this.parentNode;
+            const cardText = cardBody.querySelector('.card-text');
+            cardText.classList.toggle('expanded');
+            this.style.display = 'none'; // Hide "Read More" link after expanding
+        });
+    });
+});
