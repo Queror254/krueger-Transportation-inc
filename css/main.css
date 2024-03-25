@@ -149,6 +149,41 @@ nav a:hover {
     justify-content: center;
 }
 
+/* Add fade-in and pop-up effect for hero content */
+@keyframes fadeInAndPopUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-50%) scale(0.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-50%) scale(1);
+    }
+}
+
+.hero__content_animator {
+    margin-top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: fadeInAndPopUp 3s ease forwards;
+}
+
+/* Apply fade-in animation to hero content */
+.hero__content {
+    animation: fadeIn 3s ease forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 @media (max-width: 790px) {
     .hero{
         height: 60vh;
@@ -162,6 +197,7 @@ nav a:hover {
 }
 
 
+/* Add animation to the button */
 .hero__scroll-btn {
     position: absolute;
     left: 50%;
@@ -173,17 +209,29 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
+    animation: buttonAnimation 2s ease-in-out infinite;
 }
 
+@keyframes buttonAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Adjust hover effect */
 .hero__scroll-btn:hover {
     color: var(--bs-light);
     opacity: 0.8;
+    transform: scale(1.1);
 }
-
-.hero__scroll-btn .bi {
-    transition-delay: 0.8s;
-    animation: bounce 1s infinite alternate;
-} 
 
 .hero a{
     color: white!important;
