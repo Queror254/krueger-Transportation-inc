@@ -85,9 +85,9 @@ nav a {
   }
     
 nav a:hover {
-    color: white ;
-    background-color: #9b2626;
+    background-color: white;
     border-radius: 1rem;
+    text-decoration: underline;
  }
 
  footer a:hover{
