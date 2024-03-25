@@ -124,7 +124,7 @@ nav a:hover {
     width: auto;
     height: auto;
     transform: translateY(-50%);
-    animation: swipeIn 1.5s ease forwards;/* Animation to swipe the image in */
+    animation: swipeIn 1.5s ease-in-out forwards;/* Animation to swipe the image in */
 }
 
 @keyframes swipeIn {
@@ -177,7 +177,7 @@ nav a:hover {
 }
 
 .hero__content_animator {
-    margin-top: 50%;
+    margin-top: 60%;
     transform: translate(-50%, -50%);
     opacity: 0;
     animation: fadeInAndPopUp 2s ease forwards;
