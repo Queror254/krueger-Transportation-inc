@@ -325,6 +325,22 @@ img {
         }
 }
 
+/*** Map ***/
+.map_section{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.map iframe{
+    border-radius: 5px;
+}
+
+@media (max-width: 720px) {
+    .map_section{
+        padding: 20px;
+    }
+}
+
 /*** contact section **/
 .contact{
     background-color: #e7ebef;
