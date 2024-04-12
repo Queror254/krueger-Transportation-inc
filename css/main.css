@@ -273,47 +273,14 @@ nav a:hover {
 
 
 /** Services section **/
+
 .services{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-left: 150px;
-    padding-right: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .col_width{
     width: 30%;
-}
-
-.card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 5px;
-    min-width: 350px !important;
-    max-width: 350px!important;
-    transition: transform 1s ease;
-    background-color: #f9fafb !important;
-}
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.card-title{
-    font-size: 25px;
-    color: #9b2626 !important;;
-}
-
-.card-text {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    /* Number of lines to show */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .read-more {
@@ -352,9 +319,30 @@ img {
         justify-content: space-between;
     }
 
-    .services{
-        padding-left: 16px;
+        .services {
+            padding: 20px;
+        }
+}
+
+/**new services section additional css **/
+
+.services .img-fluid {
+    max-width: 107%;
+    height: 171px !important;
+}
+
+@media (max-width: 720px) {
+    .services .row {
+        flex-direction: row !important;
+        justify-content: space-between;
     }
+
+    .services .img-fluid {
+        max-width: 100%;
+        height: 190px !important;
+        width: 100% !important;
+    }
+
 }
 
 /*** About Section ***/
